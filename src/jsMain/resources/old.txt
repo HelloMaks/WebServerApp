@@ -1,0 +1,88 @@
+/*h3 {
+        + "Выберите файл для загрузки на сервер:"
+    }
+    input {
+        type = InputType.file
+        accept = "application/vnd.ms-excel, " +
+                "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        onChange = { event ->
+            FileReader().apply {
+                readAsText(event.currentTarget.files!![0])
+            }.onload = {
+                blob = TextDecoder("UTF-8")
+                    .decode((it.target.asDynamic().result as String)
+                        .encodeToByteArray().unsafeCast<Uint8Array>())
+            }
+        }
+    }
+
+    blob?.let { excelData ->
+        div {
+            button {
+                + "Загрузка данных"
+                onClick = {
+                    parse = true
+                }
+            }
+        }
+
+        if(parse) {
+            div {
+                + (blob ?: "nothing...")
+            }
+        }
+    }*/
+
+
+
+
+
+    -------------------------------------------------
+
+    /*str.forEach {
+                li { + it }
+                /*if(it == "№") { startNumb = 0 }
+                if(it in neededNumb.map { it.key })
+                    neededNumb.map { map ->
+                        if(it == map.key)
+                            startNumb
+                        else map.value
+                    }
+
+                if(startNumb > 0) startNumb++
+                li { + neededNumb.toString() }*/
+            }*/
+
+            /*val str = props.innerCSV.split(Regex("\"\".*\"\"")).map {
+                    it.replace("\",","\"SEPARATOR") }.flatMap {
+                        it.replace("\"","").split(Regex("SEPARATOR"))
+                }*/
+
+                /*val rows = props.innerCSV.split(Regex("\"\".*\"\"")).map { row ->
+                    row.replace(Regex("\"[,; ]"),"\"SEPARATOR")
+                        .replace("\"\n", "\",")
+                        .replace("\"", "")
+                }*/
+
+                /*ol {
+                        rows.forEach { row ->
+                            row.split("{SPR}").forEach {
+                                li {
+                                    + it
+                                }
+                            }
+                            div { + "-----" }
+                        }
+                    }*/
+
+                    ----------------
+
+                    /*val disciplines = mutableMapOf<String, String>()
+                            val needHeader =
+                                map.keys.first { it in listOf("Преподаватель", "Преподаватели") }
+                            if(map[needHeader]!! !in teachers) {
+                                teachers.add(map[needHeader]!!)
+                                val needHeader2 =
+                                    map.keys.first { it in listOf("Дисциплина", "Дисциплины") }
+
+                            }*/
