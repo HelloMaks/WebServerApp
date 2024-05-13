@@ -1,0 +1,1 @@
+rootProject.name = "hellomaks3_2_kurs"
